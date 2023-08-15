@@ -106,5 +106,5 @@ depends_on             = [ module.cloud-credentials, module.blueprint, module.cl
 
 resource "azurerm_resource_group" "rg" {
   location = var.cluster_location
-  name     = "instruqtResourceGroup"
+  name     = var.cluster_resource_group
 }
