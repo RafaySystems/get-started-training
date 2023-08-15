@@ -103,8 +103,3 @@ node_tags              = var.node_tags
 node_labels            = var.node_labels
 depends_on             = [ module.cloud-credentials, module.blueprint, module.cluster-overrides]
 }
-
-resource "azurerm_resource_group" "rg" {
-  location = var.cluster_location
-  name     = var.cluster_resource_group
-}
