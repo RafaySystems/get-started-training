@@ -1,4 +1,4 @@
-# Poject name variable
+# Project name variable
 project               = "<PROJECT_NAME>"
 
 # Cloud Credentials specific variables
