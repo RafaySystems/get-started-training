@@ -75,8 +75,8 @@ resource "rafay_aks_cluster_v3" "cluster" {
   }
 }
 
-resource "azurerm_resource_group" "rg" {
-  count          = var.subscription_id == "" ? 0 : 1
-  location       = var.cluster_location
-  name           = var.cluster_resource_group
-}
+# resource "azurerm_resource_group" "rg" {
+#   count          = var.subscription_id == "" ? 0 : 1
+#   location       = var.cluster_location
+#   name           = var.cluster_resource_group
+# }
