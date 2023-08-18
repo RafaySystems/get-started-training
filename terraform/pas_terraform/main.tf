@@ -64,6 +64,7 @@ module "blueprint" {
 module aks_cluster {
  count                  = var.subscription_id == "" ? 0 : 1
  source                 = "./modules/aks"
+ subscription_id        = var.subscription_id
  cluster_name           = var.cluster_name
  cluster_tags           = var.cluster_tags
  project                = var.project
