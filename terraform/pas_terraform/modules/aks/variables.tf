@@ -61,3 +61,7 @@ variable "node_tags" {
 variable "node_labels" {
   type = map
 }
+
+variable "subscription_id" {
+  type = string
+}
